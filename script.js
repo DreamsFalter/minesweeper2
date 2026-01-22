@@ -118,7 +118,7 @@ function generateBoard() {
         board.push(row); //add row to field
     }
 
-    mineCounter.textContent = "Mines left: " +  (numMines - flagsPlaced); //shit doesnt work update: i think it wokrs 
+    mineCounter.textContent = "Mines left: " +  (numMines - flagsPlaced);
 }
 
 //first click sets the mines
@@ -232,7 +232,7 @@ function checkWin() {
 
     if (revealedCount === numRows * numCols - numMines) { //if you reveal everything without mines then u win
         gameActive = false;
-        alert('You Win!'); //YOU WIN!!!!! im so excited im gonna cum
+        alert('You Win!'); //YOU WIN!!!!!
     }
 }
 
@@ -251,23 +251,18 @@ hard.onclick = () => setDifficulty(difficulties.hard);
 
 //esay by default 
 setDifficulty(difficulties.easy);
-//cool
-//im so
-//sigma
-//google
-//how to center div
+
 
 
 function updateMineCounter() {
     let flagsPlaced = 0;
 
-    //count you bitch because i cant
+    //count
     for (let r = 0; r < numRows; r++) {
         for (let c = 0; c < numCols; c++) {
             if (board[r][c].isFlagged) flagsPlaced++;
         }
     }
 
-    // polease 
     mineCounter.textContent = "Mines left: " +  (numMines - flagsPlaced);
-} //thank you :3
+} 
